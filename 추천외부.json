@@ -14,5 +14,9 @@
 {"id":"bumpis","이름":"범정부오피스(KISA)","설명":"공문서 편집 자동화(모두의 광장 자료실)","홈":"https://modu.go.kr/front/board/boardContentsView.do?mode=W&contents_id=7bf5da6228d146fcade014ede52bb129&board_id=240&menu_id=606",
  "확인":{"방법":"페이지","페이지주소":"https://modu.go.kr/front/board/boardContentsView.do?mode=W&contents_id=7bf5da6228d146fcade014ede52bb129&board_id=240&menu_id=606","링크찾기":"href=\"(?<주소>/commonfile/fileidDownLoad\\.do\\?file_id=[0-9a-f]+)\"[^>]*>\\s*(?<파일>[^<]*?범피스\\s*(?<버전>\\d+)\\.zip)","파일버전":"범피스\\s*(\\d+)"},
  "받기":{"휴대용":"{링크}"},
- "감지":{"실행파일":"범정부오피스*.exe;*범피스*.exe"}}
+ "감지":{"실행파일":"범정부오피스*.exe;*범피스*.exe"}},
+{"id":"ezpdf","이름":"ezPDF Editor 3.0 개인용","설명":"PDF 편집·변환","홈":"https://www.unidocs.co.kr/",
+ "확인":{"방법":"페이지","페이지주소":"https://ezpdfdrmupdate.s3.ap-northeast-2.amazonaws.com/update/ezpdfeditor/per/info_per.html","버전찾기":"version\\s*=\\s*(\\d+,\\d+,\\d+,\\d+)"},
+ "받기":{"설치형":"https://www.unidocs.co.kr/data/ezpdfeditor/personal/ezPDFEditor_Personal_Setup_{버전}.exe"},
+ "감지":{"등록이름":"^ezPDF Editor","실행파일":"ezPDFEditor.exe","버전출처":"파일"}}
 ]}

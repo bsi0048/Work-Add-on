@@ -1,0 +1,18 @@
+{"항목":[
+{"id":"ribbonx","이름":"Office RibbonX Editor","설명":"엑셀·워드 파일에 사용자 리본 넣기","홈":"https://github.com/fernandreu/office-ribbonx-editor",
+ "확인":{"방법":"github","저장소":"fernandreu/office-ribbonx-editor"},
+ "받기":{"휴대용":"OfficeRibbonXEditor-NETFramework-Binaries.zip","설치형":"OfficeRibbonXEditor-NETFramework-Installer.exe"},
+ "감지":{"등록이름":"^Office RibbonX Editor","실행파일":"OfficeRibbonXEditor.exe"}},
+{"id":"rubberduck","이름":"Rubberduck","설명":"엑셀 VBA 편집기 보강(코드 정리·찾기·시험)","홈":"https://github.com/rubberduck-vba/Rubberduck",
+ "확인":{"방법":"github","저장소":"rubberduck-vba/Rubberduck","파일버전":"Setup\\.(\\d+\\.\\d+\\.\\d+\\.\\d+)\\.exe","확인값파일":"Rubberduck.Setup.*.exe_sha256.hash"},
+ "받기":{"설치형":"Rubberduck.Setup.*.exe"},
+ "감지":{"등록이름":"^Rubberduck","실행파일":"Rubberduck.dll"}},
+{"id":"everything","이름":"Everything","설명":"파일 이름 즉시 검색","홈":"https://www.voidtools.com/",
+ "확인":{"방법":"페이지","페이지주소":"https://www.voidtools.com/downloads/","버전찾기":"Everything-(\\d+\\.\\d+\\.\\d+\\.\\d+)\\.{arch}\\.zip"},
+ "받기":{"휴대용":"https://www.voidtools.com/Everything-{버전}.{arch}.zip","설치형":"https://www.voidtools.com/Everything-{버전}.{arch}-Setup.exe"},
+ "감지":{"등록이름":"^Everything [0-9.]+","실행파일":"Everything.exe"}},
+{"id":"bumpis","이름":"범정부오피스(KISA)","설명":"공문서 편집 자동화(모두의 광장 자료실)","홈":"https://modu.go.kr/front/board/boardContentsView.do?mode=W&contents_id=7bf5da6228d146fcade014ede52bb129&board_id=240&menu_id=606",
+ "확인":{"방법":"페이지","페이지주소":"https://modu.go.kr/front/board/boardContentsView.do?mode=W&contents_id=7bf5da6228d146fcade014ede52bb129&board_id=240&menu_id=606","링크찾기":"href=\"(?<주소>/commonfile/fileidDownLoad\\.do\\?file_id=[0-9a-f]+)\"[^>]*>\\s*(?<파일>[^<]*?범피스\\s*(?<버전>\\d+)\\.zip)","파일버전":"범피스\\s*(\\d+)"},
+ "받기":{"휴대용":"{링크}"},
+ "감지":{"실행파일":"범정부오피스*.exe;*범피스*.exe"}}
+]}

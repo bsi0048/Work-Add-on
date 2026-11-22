@@ -19,4 +19,8 @@
  "확인":{"방법":"페이지","페이지주소":"https://ezpdfdrmupdate.s3.ap-northeast-2.amazonaws.com/update/ezpdfeditor/per/info_per.html","버전찾기":"version\\s*=\\s*(\\d+,\\d+,\\d+,\\d+)"},
  "받기":{"설치형":"https://www.unidocs.co.kr/data/ezpdfeditor/personal/ezPDFEditor_Personal_Setup_{버전}.exe"},
  "감지":{"등록이름":"^ezPDF Editor","실행파일":"ezPDFEditor.exe","버전출처":"파일"}}
+{"id":"bandizip","이름":"반디집","설명":"압축·해제","홈":"https://www.bandisoft.com/bandizip/",
+ "확인":{"방법":"페이지","페이지주소":"https://www.bandisoft.com/bandizip/","버전찾기":"\"softwareVersion\"\\s*:\\s*\"v(\\d+\\.\\d+)\""},
+ "받기":{"설치형":"https://bandisoft.app/bandizip/BANDIZIP-SETUP-STD-ALL.EXE"},
+ "감지":{"등록이름":"^Bandizip","실행파일":"Bandizip.exe"}}
 ]}
